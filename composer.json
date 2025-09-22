@@ -1,0 +1,98 @@
+{
+    "name": "vguerrerobosch/xivarri",
+    "description": "The UIC Xivarri microsite",
+    "keywords": [
+        "vguerrerobosch",
+        "wordpress",
+        "xivarri"
+    ],
+    "homepage": "https://github.com/vguerrerobosch/xivarri",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Victor Guerrero",
+            "email": "victorg@hey.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.4",
+        "composer/installers": "^2.3",
+        "roots/bedrock-autoloader": "^1.0.4",
+        "roots/wordpress": "^6.8",
+        "symfony/http-foundation": "^7.2",
+        "vinkla/extended-acf": "^14.0",
+        "vlucas/phpdotenv": "^5.6",
+        "wpengine/advanced-custom-fields-pro": "^6.4",
+        "wpml/wpml-multilingual-cms": "^4.6"
+    },
+    "require-dev": {
+        "symfony/var-dumper": "^7.2"
+    },
+    "autoload": {
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "allow-plugins": {
+            "composer/installers": true,
+            "ffraenz/private-composer-installer": true,
+            "roots/wordpress-core-installer": true
+        }
+    },
+    "extra": {
+        "installer-paths": {
+            "public/mu-plugins/{$name}": [
+                "type:wordpress-muplugin",
+                "wpengine/advanced-custom-fields-pro"
+            ],
+            "public/plugins/{$name}": [
+                "type:wordpress-plugin"
+            ],
+            "public/themes/{$name}": [
+                "type:wordpress-theme"
+            ]
+        },
+        "wordpress-install-dir": "public/wordpress"
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://wpackagist.org",
+            "only": [
+                "wpackagist-plugin/*",
+                "wpackagist-theme/*"
+            ]
+        },
+        {
+            "type": "composer",
+            "url": "https://connect.advancedcustomfields.com"
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "wpml/wpml-multilingual-cms",
+                "version": "4.7.4",
+                "type": "wordpress-plugin",
+                "dist": {
+                    "type": "zip",
+                    "url": "https://wpml.org/?download=6088&user_id={%PLUGIN_WPML_USER_ID}&subscription_key={%PLUGIN_WPML_SUBSCRIPTION_KEY}&version={%version}"
+                },
+                "require": {
+                    "ffraenz/private-composer-installer": "^5.0"
+                }
+            }
+        }
+    ],
+    "scripts": {
+        "post-root-package-install": [
+            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+        ]
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

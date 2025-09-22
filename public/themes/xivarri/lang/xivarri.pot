@@ -1,0 +1,35 @@
+# Copyright (C) 2021 Victor Guerrero
+# This file is distributed under the MIT License.
+msgid ""
+msgstr ""
+"Project-Id-Version: xivarri 1.0.0\n"
+"Report-Msgid-Bugs-To: https://github.com/vguerrerobosch/xivarri/issues\n"
+"Last-Translator: Victor Guerrero <victorg@hey.com>\n"
+"Language-Team: Victor Guerrero <victorg@hey.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2021-08-17T16:50:22+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.5.0\n"
+"X-Domain: xivarri\n"
+
+#. Theme Name of the theme
+msgid "xivarri"
+msgstr ""
+
+#. Theme URI of the theme
+msgid "https://github.com/vguerrerobosch/xivarri"
+msgstr ""
+
+#. Description of the theme
+msgid "The UIC Xivarri microsite"
+msgstr ""
+
+#. Author of the theme
+msgid "Victor Guerrero"
+msgstr ""
+
+#. Author URI of the theme
+msgid ":vendor_url"
+msgstr ""
