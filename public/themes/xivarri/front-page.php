@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <div class="absolute inset-x-0 top-0 h-auto">
-    <img src="<?= asset('texture.svg') ?>" alt="" class="w-full h-auto" />
+    <img src="<?= asset('texture.png') ?>" alt="" class="w-full h-auto" />
 </div>
 
 <div class="relative px-5 sm:px-12 py-20">
@@ -9,7 +9,7 @@
 
     <div class="mx-auto mt-40">
         <div class="font-medium text-4xl uppercase mt-10">Despertem la ment</div>
-        <div class="font-display font-black text-[84px] sm:text-[120px] md:text-[180px] lg:text-[240px] xl:text-[320px] 2xl:text-[350px] uppercase whitespace-nowrap leading-[0.75] *:transition-all *:duration-500 group overflow-y-hidden">
+        <div class="font-display font-black text-[84px] sm:text-[120px] md:text-[180px] lg:text-[240px] xl:text-[320px] 2xl:text-[350px] uppercase whitespace-nowrap leading-[0.75] *:transition-all *:duration-500 group overflow-hidden">
             <span class="text-[1.25em] group-hover:text-[1em]">X</span><!--
         --><span class="text-[0.95em]">i</span><!--
         --><span class="text-[1.15em] -mr-[0.1em]">v</span><!--
