@@ -1,6 +1,32 @@
 @import "tailwindcss";
 
+@font-face {
+    font-display: swap;
+    font-family: 'Owners';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/fonts/Owners-Regular.otf') format('opentype');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Owners';
+    font-style: medium;
+    font-weight: 500;
+    src: url('/fonts/Owners-Medium.otf') format('opentype');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Owners Narrow';
+    font-style: medium;
+    font-weight: 900;
+    src: url('/fonts/OwnersNarrow-Black.otf') format('opentype');
+}
+
 @theme {
+    --font-sans: 'Owners', ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-display: 'Owners Narrow', ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --color-blue-light: #413FD2;
     --color-blue: #4C49F2;
     --color-blue-dark: #191871;
@@ -8,4 +34,5 @@
     --color-apricot: #F2955D;
 
     --leading-tighter: 1.1;
+    --tracking-wide: 0.03em;
 }
