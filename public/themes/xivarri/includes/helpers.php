@@ -20,7 +20,7 @@ if (!function_exists('svg')) {
 
         $theme_path = get_stylesheet_directory();
 
-        $path = "$theme_path/svg/$name.svg";
+        $path = "$theme_path/assets/svg/$name.svg";
 
         if (!file_exists($path)) {
             return;

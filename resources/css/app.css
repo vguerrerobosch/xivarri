@@ -30,9 +30,12 @@
     --color-blue-light: #413FD2;
     --color-blue: #4C49F2;
     --color-blue-dark: #191871;
+    --color-blue-darker: #1E1D6F;
     --color-orange: #FF9940;
     --color-apricot: #F2955D;
 
     --leading-tighter: 1.1;
     --tracking-wide: 0.03em;
+
+    --default-transition-duration: 300ms;
 }
