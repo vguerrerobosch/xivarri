@@ -104,39 +104,58 @@
     </div>
 
     <div class="flex space-x-5 mt-24">
-        <div class="w-3/5 p-6 rounded-xl bg-black/10 backdrop-blur-lg">
-            Lloc
-Campus UIC Barcelona
-Carrer de la Immaculada, 22, Sarrià-Sant Gervasi, 08017 Barcelona
+        <div class="w-3/5 p-6 rounded-xl bg-black/10 backdrop-blur-lg flex flex-col">
+            <div class="opacity-50">Lloc</div>
+            <div class=""><span class="text-2xl">Campus UIC Barcelona</span><br>Carrer de la Immaculada, 22, Sarrià-Sant Gervasi, 08017 Barcelona</div>
+            <div class="flex-1 mt-5 relative rounded-lg overflow-hidden">
+                <img src="<?= asset('map.jpg') ?>" alt="" class="absolute inset-0 w-full h-full object-cover" />
+            </div>
         </div>
         <div class="w-2/5 grid grid-cols-2 gap-5">
-            <div class="p-6 rounded-xl bg-black/10 backdrop-blur-lg">
-                Reserva’t la data
-13 de novembre, 2025
-19.30 h - 22.30 h
+            <div class="p-6 rounded-xl bg-black/10 backdrop-blur-lg flex flex-col justify-between">
+                <div class="size-10 rounded-full bg-black/15"></div>
+                <div class="mt-16">
+                    <div class="opacity-50">Reserva’t la data</div>
+                    <div class="text-lg leading-tight">13 de novembre, 2025<br>19.30 h - 22.30 h</div>
+                </div>
             </div>
-            <div class="p-6 rounded-xl bg-black/10 backdrop-blur-lg">
-                Compra l’entrada
-Disponible a la nostra plataforma
+            <div class="p-6 rounded-xl bg-black/10 backdrop-blur-lg flex flex-col justify-between">
+                <div class="size-10 rounded-full bg-black/15"></div>
+                <div class="mt-16">
+                    <div class="opacity-50">Compra l’entrada</div>
+                    <div class="text-lg leading-tight">Disponible a la nostra plataforma</div>
+                </div>
             </div>
-            <div class="p-6 rounded-xl bg-black/10 backdrop-blur-lg">
-                Contacta amb nosaltres
-info@uic.es
-+34 93 254 18 00
+            <div class="p-6 rounded-xl bg-black/10 backdrop-blur-lg flex flex-col justify-between">
+                <div class="size-10 rounded-full bg-black/15"></div>
+                <div class="mt-16">
+                    <div class="opacity-50">Contacta amb nosaltres</div>
+                    <div class="text-lg leading-tight">info@uic.es<br>+34 93 254 18 00</div>
+                </div>
             </div>
-            <div class="p-6 rounded-xl bg-black/10 backdrop-blur-lg">
-                Un esdeveniment de
-L’Institut de Cultura i Pensament de
-UIC Barcelona
+            <div class="p-6 rounded-xl bg-black/10 backdrop-blur-lg flex flex-col justify-between">
+                <div class="size-10 rounded-full bg-black/15"></div>
+                <div class="mt-16">
+                    <div class="opacity-50">Un esdeveniment de</div>
+                    <div class="text-lg leading-tight">L’Institut de Cultura i Pensament de UIC&nbsp;Barcelona</div>
+                </div>
             </div>
         </div>
     </div>
 
     <div class="p-6 rounded-xl bg-black/10 backdrop-blur-lg mt-5">Amb el patrocini de</div>
-    <div class="p-6 rounded-xl bg-black/10 backdrop-blur-lg mt-5">
-        Política de cookies
-        Política de privacitat
-        Condicions generals d’ús
+    <div class="px-6 py-4 rounded-xl bg-black/10 backdrop-blur-lg mt-5 flex justify-between items-center">
+        <ul class="flex space-x-6 [&>li]:border-r [&>li]:border-white/50 [&>li]:last:border-0 [&>li]:pr-6">
+            <li><a href="">Política de cookies</a></li>
+            <li><a href="">Política de privacitat</a></li>
+            <li><a href="">Condicions generals d’ús</a></li>
+        </ul>
+        <ul class="flex space-x-3">
+            <li><a href="" class="block size-10 rounded-full bg-black/15"></a></li>
+            <li><a href="" class="block size-10 rounded-full bg-black/15"></a></li>
+            <li><a href="" class="block size-10 rounded-full bg-black/15"></a></li>
+            <li><a href="" class="block size-10 rounded-full bg-black/15"></a></li>
+        </ul>
     </div>
 
     <div class="absolute z-[-1] bottom-0 inset-x-0">
