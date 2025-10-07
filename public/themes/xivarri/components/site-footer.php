@@ -8,7 +8,7 @@
                 <a href="https://maps.app.goo.gl/cmWk5QaT9bMfUxck7" target="_blank" rel="noopener noreferrer" class="absolute inset-0 w-full h-full"></a>
             </div>
         </div>
-        <div class="lg:w-2/5 grid lg:grid-cols-2 gap-2 lg:gap-5">
+        <div class="lg:w-2/5 grid sm:grid-cols-2 gap-2 lg:gap-5">
             <div class="p-4 lg:p-6 rounded-xl bg-black/10 backdrop-blur-lg flex flex-col justify-between">
                 <div class="size-10 rounded-full bg-black/15">
                     <?= svg('calendar', 'w-full h-full p-2.5') ?>
@@ -66,7 +66,7 @@
             ];
             foreach ($socials as [$icon, $url]): ?>
                 <li>
-                    <a href="<?= $url ?>" class="block size-10 rounded-full bg-black/15">
+                    <a href="<?= $url ?>" class="block size-10 rounded-full bg-black/15 hover:bg-orange transition-colors" target="_blank" rel="noopener noreferrer">
                         <?= svg($icon, 'w-full h-full p-2.5') ?>
                     </a>
                 </li>
