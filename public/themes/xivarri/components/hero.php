@@ -7,7 +7,7 @@
 
     <div class="flex justify-center mt-40">
         <div>
-            <div class="font-semibold text-4xl uppercase -mb-10">Despertem la ment</div>
+            <div class="font-semibold text-lg sm:text-2xl md:text-3xl xl:text-4xl uppercase lg:-mb-6">Despertem la ment</div>
             <div class="font-display font-black text-[84px] sm:text-[120px] md:text-[180px] lg:text-[240px] xl:text-[320px] 2xl:text-[350px] uppercase whitespace-nowrap leading-[0.75] *:transition-all *:duration-500 group overflow-hidden">
                 <span class="text-[1.25em] group-hover:text-[1em]">X</span><!--
             --><span class="text-[0.95em]">i</span><!--

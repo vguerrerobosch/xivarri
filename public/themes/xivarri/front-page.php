@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div class="relative px-5 pb-10 pt-24">
+<div class="relative px-4 sm:px-5 pb-10 pt-24">
     <?php
     component('hero');
     component('intro');

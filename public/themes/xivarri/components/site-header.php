@@ -1,4 +1,4 @@
-<div class="relative flex px-5 py-6 justify-between items-center space-x-10 uppercase leading-none -mb-24 z-10">
+<div class="relative hidden xl:flex px-5 py-6 justify-between items-center space-x-10 uppercase leading-none -mb-24 z-10">
     <div>Barcelona • Espanya<br>13 de novembre DE 2025<br>AULA MAGNA, CAMPUS UIC BARCELONA
     </div>
     <ul class="font-semibold flex space-x-10 ml-auto">
@@ -12,10 +12,10 @@
         foreach ($menu_items as $item): ?>
             <li><a
                 href="<?= $item['url']; ?>"
-                class="underline decoration-transparent hover:decoration-white underline-offset-4 decoration-2 transition-colors"
+                class="underline decoration-transparent hover:decoration-white underline-offset-4 decoration-2 transition-colors whitespace-nowrap"
             ><?= $item['text']; ?></a></li>
         <?php endforeach; ?>
-        <li><a href="#" class="bg-white text-blue-darker rounded-full py-2 px-6 hover:bg-apricot transition-colors hover:text-white">Compra l’entrada</a></li>
+        <li><a href="#" class="bg-white text-blue-darker rounded-full py-2 px-6 hover:bg-apricot transition-colors hover:text-white whitespace-nowrap">Compra l’entrada</a></li>
     </ul>
     <div class="font-semibold uppercase">Cat</div>
 </div>
