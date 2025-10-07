@@ -6,4 +6,5 @@
   <?php wp_head(); ?>
 </head>
 <body class="bg-blue-dark text-white antialiased tracking-wide">
+  <div class="fixed inset-0 z-[-1] bg-gradient-to-b from-blue to-blue-dark"></div>
   <?php component('site-header') ?>

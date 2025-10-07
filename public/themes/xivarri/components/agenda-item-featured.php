@@ -11,6 +11,6 @@ $args = wp_parse_args($args, [
 <div class="border border-white/20 bg-white text-black rounded rounded-xl px-6 py-4">
     <div class="w-20 opacity-70"><?= $args['time'] ?></div>
     <div class="uppercase mt-12"><?= $args['title'] ?></div>
-    <div class="font-medium text-3xl"><?= $args['speaker'] ?></div>
+    <div class="font-semibold text-3xl"><?= $args['speaker'] ?></div>
     <div class="text-sm"><?= $args['description'] ?></div>
 </div>
