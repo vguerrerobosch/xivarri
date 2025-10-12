@@ -1,14 +1,15 @@
-<div>
-    <div class="absolute inset-x-0 top-0 h-auto z-[-1]">
-        <img src="<?= asset('texture.png') ?>" alt="" class="w-full h-auto" />
+<div class="relative min-h-screen pt-24">
+    <div class="absolute inset-0 z-[-1] -mx-4 sm:-mx-5">
+        <video src="<?= asset('waves-1.webm') ?>" autoplay muted loop class="min-w-full min-h-full w-auto h-auto object-cover" playsinline></video>
+        <!-- <img src="<?= asset('texture.png') ?>" alt="" class="min-w-full min-h-full w-auto h-auto object-cover" /> -->
     </div>
 
-    <div class="ml-auto max-w-lg font-semibold text-3xl/tighter mt-16">Un espai de reflexió i diàleg per als qui tenen ganes de fer soroll. Aquí no vens només a escoltar, hi vens a dir la teva.</div>
+    <div class="ml-auto max-w-lg font-semibold text-2xl md:text-3xl leading-tighter mt-10">Un espai de reflexió i diàleg per als qui tenen ganes de fer soroll. Aquí no vens només a escoltar, hi vens a dir la teva.</div>
 
     <div class="flex justify-center mt-40">
         <div>
-            <div class="font-semibold text-lg sm:text-2xl md:text-3xl xl:text-4xl uppercase lg:-mb-6">Despertem la ment</div>
-            <div class="font-display font-black text-[84px] sm:text-[120px] md:text-[180px] lg:text-[240px] xl:text-[320px] 2xl:text-[350px] uppercase whitespace-nowrap leading-[0.75] *:transition-all *:duration-500 group overflow-hidden">
+            <div class="font-semibold text-lg sm:text-2xl md:text-3xl xl:text-4xl uppercase lg:-mb-6 2xl:-mb-10">Despertem la ment</div>
+            <div class="font-display font-black text-[84px] sm:text-[120px] md:text-[180px] lg:text-[240px] xl:text-[320px] 2xl:text-[350px] min-[1920px]:!text-[420px] uppercase whitespace-nowrap leading-[0.75] *:transition-all *:duration-500 group">
                 <span class="text-[1.25em] group-hover:text-[1em]">X</span><!--
             --><span class="text-[0.95em]">i</span><!--
             --><span class="text-[1.15em] -mr-[0.1em]">v</span><!--
