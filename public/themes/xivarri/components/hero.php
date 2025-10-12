@@ -4,7 +4,7 @@
         <!-- <img src="<?= asset('texture.png') ?>" alt="" class="min-w-full min-h-full w-auto h-auto object-cover" /> -->
     </div>
 
-    <div class="ml-auto max-w-lg font-semibold text-2xl md:text-3xl leading-tighter mt-10">Un espai de reflexió i diàleg per als qui tenen ganes de fer soroll. Aquí no vens només a escoltar, hi vens a dir la teva.</div>
+    <div class="ml-auto max-w-lg font-semibold text-xl sm:text-2xl md:text-3xl leading-tighter mt-10">Un espai de reflexió i diàleg per als qui tenen ganes de fer soroll. Aquí no vens només a escoltar, hi vens a dir la teva.</div>
 
     <div class="flex justify-center mt-40">
         <div>

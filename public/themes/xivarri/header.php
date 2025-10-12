@@ -3,6 +3,8 @@
 <head>
   <meta charset="<?php bloginfo('charset'); ?>">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="16x16" href="<?= asset('favicon-16.png') ?>">
+  <link rel="icon" type="image/png" sizes="32x32" href="<?= asset('favicon-32.png') ?>">
   <?php wp_head(); ?>
 </head>
 <body class="bg-blue-dark text-white antialiased">
