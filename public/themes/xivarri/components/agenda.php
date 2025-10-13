@@ -16,36 +16,36 @@
     <?php
 
     component('agenda-item', [
-        'time' => '19:30h',
+        'time' => '19:30 h',
         'text' => '🍿 Pica-pica per trencar el gel',
     ]);
 
     component('agenda-item', [
-        'time' => '20:00h',
+        'time' => '20:00 h',
         'text' => '💥 Què és Xivarri?'
     ]);
 
     component('agenda-item-featured', [
         'time' => '20:15 h',
-        'speaker' => 'Ricardo Piñero',
+        'speaker' => 'Ricardo Piñero - L’art d’estar atent als altres',
         'title' => '🎙️ Xerrada',
-        'description' => 'Filòsof i Catedràtic d’Estètica i Teoria de les Arts a la Universitat de Navarra',
+        'description' => 'Filòsof i catedràtic d’Estètica i Teoria de les Arts a la Universitat de Navarra',
     ]);
 
     component('agenda-item', [
-        'time' => '20:40h',
+        'time' => '20:40 h',
         'text' => '🙋‍♀️ Torn de preguntes',
         'class' => 'bg-blue-light',
     ]);
 
     component('agenda-item', [
-        'time' => '21:15h',
+        'time' => '21:15 h',
         'text' => '🪩 Sopar, música i moltes sorpreses',
         'class' => 'bg-apricot'
     ]);
 
     component('agenda-item', [
-        'time' => '22:30h',
+        'time' => '22:30 h',
         'text' => '👋🏻 Comiat'
     ]);
 

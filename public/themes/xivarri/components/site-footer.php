@@ -2,7 +2,7 @@
     <div class="flex flex-col gap-2 lg:gap-5 lg:flex-row">
         <div class="lg:w-3/5 p-4 lg:p-6 rounded-xl bg-black/10 border border-transparent backdrop-blur-lg flex flex-col group relative hover:bg-black/20 hover:border hover:border-orange transition-colors">
             <div class="opacity-50">Lloc</div>
-            <div><span class="text-2xl">Campus UIC Barcelona</span><br>Carrer de la Immaculada, 22, Sarrià-Sant Gervasi, 08017 Barcelona</div>
+            <div><span class="text-2xl">Universitat Internacional de Catalunya · Campus Barcelona</span><br>Carrer de la Immaculada, 22, Sarrià-Sant Gervasi, 08017 Barcelona</div>
             <div class="flex-1 mt-5 relative rounded-lg overflow-hidden">
                 <img src="<?= asset('map.jpg') ?>" alt="" class="lg:absolute lg:inset-0 w-full h-full object-cover" />
             </div>
@@ -26,7 +26,7 @@
                     <div class="opacity-50">Compra l’entrada</div>
                     <div class="text-xl leading-tight">Disponible a la nostra plataforma</div>
                 </div>
-                <a href="#" class="absolute inset-0 w-full h-full" title="Compra l’entrada"></a>
+                <a href="#" class="absolute inset-0 w-full h-full" title="Compra l’entrada" target="_blank" rel="noopener noreferrer"></a>
             </div>
             <div class="p-4 lg:p-6 rounded-xl bg-black/10 border border-transparent backdrop-blur-lg flex flex-col justify-between">
                 <div class="size-10 rounded-full bg-black/15">
@@ -40,12 +40,13 @@
                     </div>
                 </div>
             </div>
-            <div class="p-4 lg:p-6 rounded-xl bg-black/10 border border-transparent backdrop-blur-lg flex flex-col justify-between items-start">
+            <div class="p-4 lg:p-6 rounded-xl bg-black/10 border border-transparent backdrop-blur-lg flex flex-col justify-between items-start group relative hover:bg-black/20 hover:border hover:border-orange transition-colors">
                 <?= svg('uic-barcelona', 'h-10 w-auto') ?>
                 <div class="mt-16">
                     <div class="opacity-50">Un esdeveniment de</div>
                     <div class="text-xl leading-tight">L’Institut de Cultura i Pensament de UIC&nbsp;Barcelona</div>
                 </div>
+                <a href="https://www.uic.es/ca/institut-cultura-i-pensament" target="_blank" rel="noopener noreferrer" title="Institut de Cultura i Pensament - Universitat Internacional de Catalunya" class="absolute inset-0 w-full h-full"></a>
             </div>
         </div>
     </div>
@@ -67,7 +68,7 @@
             $socials = [
                 ['instagram', 'https://www.instagram.com/UICBarcelona/'],
                 ['youtube', 'https://www.youtube.com/user/UIC'],
-                // ['tiktok', '#'],
+                ['tiktok', 'https://www.tiktok.com/@uicbcn'],
                 ['linkedin', 'https://www.linkedin.com/school/universitat-internacional-de-catalunya-uic/'],
             ];
             foreach ($socials as [$icon, $url]): ?>

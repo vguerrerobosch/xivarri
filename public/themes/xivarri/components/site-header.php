@@ -7,7 +7,9 @@
             <div class="block lg:hidden">
                 <?= svg('logo', 'h-9 w-auto') ?>
             </div>
-            <div class="hidden lg:flex">Barcelona • Espanya<br>13 de novembre DE 2025<br>AULA MAGNA, CAMPUS UIC BARCELONA
+            <div class="hidden lg:flex">
+                <?= svg('uic', 'h-12 w-auto mr-4') ?>
+                <div>Barcelona • Espanya<br>13 de novembre DE 2025<br>Campus Barcelona - Aula Magna</div>
             </div>
             <ul class="hidden lg:flex space-x-10 font-semibold ml-auto">
                 <?php
