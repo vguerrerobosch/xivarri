@@ -6,6 +6,9 @@
   <link rel="icon" type="image/png" sizes="16x16" href="<?= asset('favicon-16.png') ?>">
   <link rel="icon" type="image/png" sizes="32x32" href="<?= asset('favicon-32.png') ?>">
   <?php wp_head(); ?>
+  <style>
+    [x-cloak] { display: none !important; }
+  </style>
 </head>
 <body class="bg-blue-dark text-white antialiased">
   <div class="fixed inset-0 z-[-1] bg-gradient-to-b from-blue to-blue-dark"></div>

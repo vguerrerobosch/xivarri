@@ -51,7 +51,7 @@
     </div>
     <!-- <div class="p-4 lg:p-6 rounded-xl bg-black/10 border border-transparent backdrop-blur-lg">Amb el patrocini de</div> -->
     <div class="px-4 lg:px-6 py-4 rounded-xl bg-black/10 border border-transparent backdrop-blur-lg lg:flex justify-between items-center">
-        <ul class="lg:flex space-x-6 [&>li]:border-r [&>li]:border-white/50 [&>li]:last:border-0 [&>li]:pr-6">
+        <ul class="lg:flex space-x-6 [&>li]:lg:border-r [&>li]:lg:border-white/50 [&>li]:lg:last:border-0 [&>li]:lg:pr-6">
             <?php
             $footerLinks = [
                 ['Avís legal', 'https://www.uic.es/ca/avis-legal'],
@@ -62,7 +62,7 @@
                 <li><a href="<?= $url ?>" class="underline decoration-transparent underline-offset-2 hover:decoration-white transition-colors"><?= $label ?></a></li>
             <?php endforeach ?>
         </ul>
-        <ul class="flex space-x-3">
+        <ul class="flex space-x-3 mt-3 lg:mt-0">
             <?php
             $socials = [
                 ['instagram', 'https://www.instagram.com/UICBarcelona/'],

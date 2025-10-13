@@ -31,7 +31,7 @@
             </div>
         </div>
     </div>
-    <div x-show="isMenuOpen" x-transition.opacity class="lg:hidden fixed inset-0 z-20 px-1 py-2">
+    <div x-show="isMenuOpen" x-cloak x-transition.opacity class="lg:hidden fixed inset-0 z-20 px-1 py-2">
         <div class="h-full flex flex-col justify-between p-4 backdrop-blur-lg bg-black/10 rounded-2xl">
             <div class="flex justify-between items-center">
                 <?= svg('logo', 'h-9 w-auto') ?>
