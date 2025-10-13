@@ -2,7 +2,7 @@
     <div class="absolute inset-0 z-[-1] -mx-4 sm:-mx-5">
         <video autoplay muted loop class="min-w-full min-h-full w-auto h-auto object-cover" playsinline>
             <source src="<?= asset('waves-1b.webm') ?>" type="video/webm">
-            <source src="<?= asset('waves-1.mp4') ?>" type="video/mp4">
+            <source src="<?= asset('waves-1b.mp4') ?>" type="video/mp4">
         </video>
         <!-- <img src="<?= asset('texture.png') ?>" alt="" class="min-w-full min-h-full w-auto h-auto object-cover" /> -->
     </div>
