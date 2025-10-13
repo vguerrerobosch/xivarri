@@ -66,8 +66,8 @@
             <?php
             $socials = [
                 ['instagram', 'https://www.instagram.com/UICBarcelona/'],
-                ['youtube', 'https://www.facebook.com/UICbarcelona'],
-                ['tiktok', '#'],
+                ['youtube', 'https://www.youtube.com/user/UIC'],
+                // ['tiktok', '#'],
                 ['linkedin', 'https://www.linkedin.com/school/universitat-internacional-de-catalunya-uic/'],
             ];
             foreach ($socials as [$icon, $url]): ?>
