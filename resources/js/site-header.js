@@ -3,7 +3,7 @@ export default () => ({
   isAtTop: true,
   scrollThreshold: 50,
   previousScrollY: 0,
-  isMenuOpen: true,
+  isMenuOpen: false,
 
   init() {
     window.addEventListener('scroll', () => {
