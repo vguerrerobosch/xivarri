@@ -1,19 +1,27 @@
 export default () => ({
-  show: true,
-  threshold: 50,
-  lastScroll: 0,
+  isVisible: true,
+  isAtTop: true,
+  scrollThreshold: 50,
+  previousScrollY: 0,
+  isMenuOpen: true,
 
   init() {
     window.addEventListener('scroll', () => {
-      const currentScroll = window.scrollY;
+      const currentScrollY = window.scrollY;
 
-      if (Math.abs(currentScroll - this.lastScroll) < this.threshold) {
+      // Update top position state
+      this.isAtTop = currentScrollY <= 0;
+
+      if (Math.abs(currentScrollY - this.previousScrollY) < this.scrollThreshold) {
         return;
       }
 
-      this.show = currentScroll < this.lastScroll;
-      this.lastScroll = currentScroll;
-
+      this.isVisible = currentScrollY < this.previousScrollY;
+      this.previousScrollY = currentScrollY;
     });
+  },
+
+  toggleMenu() {
+    this.isMenuOpen = !this.isMenuOpen;
   },
 });
