@@ -1,9 +1,15 @@
 <div class="relative">
     <div class="absolute inset-y-0 left-0 z-[-1] -my-[10%] -mx-4 sm:-mx-5">
-        <video src="<?= asset('waves-2.webm') ?>" autoplay muted loop class="h-full w-auto" playsinline></video>
+        <video autoplay muted loop class="h-full w-auto" playsinline>
+            <source src="<?= asset('waves-2.webm') ?>" type="video/webm">
+            <source src="<?= asset('waves-2.mp4') ?>" type="video/mp4">
+        </video>
     </div>
     <div class="absolute inset-y-0 right-0 z-[-1] -my-[10%] -mx-4 sm:-mx-5">
-        <video src="<?= asset('waves-2.webm') ?>" autoplay muted loop class="h-full w-auto scale-x-[-1]" playsinline></video>
+        <video autoplay muted loop class="h-full w-auto scale-x-[-1]" playsinline>
+            <source src="<?= asset('waves-2.webm') ?>" type="video/webm">
+            <source src="<?= asset('waves-2.mp4') ?>" type="video/mp4">
+        </video>
     </div>
 
 <div class="max-w-4xl mx-auto mt-40">
