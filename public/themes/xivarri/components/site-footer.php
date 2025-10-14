@@ -1,6 +1,6 @@
 <div id="on-som" class="relative max-w-screen-2xl mx-auto grid gap-2 lg:gap-5 pb-16 sm:pb-5 mt-24">
-    <div class="absolute z-[-1] bottom-0 inset-x-0">
-        <img src="<?= asset('texture-2.png') ?>" alt="" class="w-full h-auto" />
+    <div class="absolute z-[-1] inset-x-0 bottom-0 top-[50%] -mx-4 sm:-mx-5">
+        <img src="<?= asset('texture-2.png') ?>" alt="" class="w-full h-full object-cover" />
     </div>
     <div class="flex flex-col gap-2 lg:gap-5 lg:flex-row">
         <div class="lg:w-3/5 p-4 lg:p-6 rounded-xl bg-black/10 border border-transparent backdrop-blur-lg flex flex-col group relative hover:bg-black/20 hover:border hover:border-orange transition-colors">
