@@ -8,7 +8,7 @@ $args = wp_parse_args($args, [
 ]);
 
 ?>
-<div class="border border-white/20 bg-white text-black rounded rounded-xl px-4 lg:px-6 py-4">
+<div class="border border-white/20 bg-white text-blue-darker rounded rounded-xl px-4 lg:px-6 py-4">
     <div class="w-20 opacity-70 text-lg"><?= $args['time'] ?></div>
     <div class="uppercase mt-12"><?= $args['title'] ?></div>
     <div class="font-semibold text-3xl"><?= $args['speaker'] ?></div>
