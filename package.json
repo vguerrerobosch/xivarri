@@ -11,6 +11,7 @@
     "not op_mini all"
   ],
   "devDependencies": {
+    "@alpinejs/intersect": "^3.15.0",
     "@tailwindcss/vite": "^4.1.13",
     "alpinejs": "^3.15.0",
     "dotenv": "^17.2.2",

@@ -17,3 +17,13 @@
 
     --default-transition-duration: 300ms;
 }
+
+/* Circular Video */
+.video-circular {
+    clip-path: circle(28.125% at center);
+    transition: clip-path 2.5s ease-in-out;
+}
+
+.video-circular.expanded {
+    clip-path: circle(100% at center);
+}
