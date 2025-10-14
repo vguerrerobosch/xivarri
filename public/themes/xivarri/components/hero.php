@@ -1,4 +1,4 @@
-<div class="relative min-h-screen flex flex-col justify-between pt-24 pb-16">
+<div class="relative min-h-svh flex flex-col justify-between pt-24 pb-16">
     <div class="absolute inset-0 z-[-1] -mx-4 sm:-mx-5">
         <video autoplay muted loop class="min-w-full min-h-full w-auto h-auto object-cover" playsinline>
             <source src="<?= asset('waves-1b.webm') ?>" type="video/webm">
