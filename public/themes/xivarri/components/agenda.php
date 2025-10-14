@@ -11,7 +11,7 @@
         <div class="absolute inset-x-0 text-orange uppercase text-center text-balance">Hem arribat amb ganes de sacsejar ments!</div>
     </div>
 
-    <div class="text-xl lg:text-3xl text-apricot uppercase mt-4 mb-4">📆 13 de novembre</div>
+    <div class="text-xl lg:text-3xl text-apricot uppercase mt-4 mb-4">📆 13 de novembre de 2025</div>
 
     <?php
 
@@ -40,7 +40,7 @@
 
     component('agenda-item', [
         'time' => '21.15 h',
-        'text' => '🪩 Sopar, música i moltes sorpreses',
+        'text' => '🎶 Sopar, música i moltes sorpreses',
         'class' => 'bg-apricot'
     ]);
 

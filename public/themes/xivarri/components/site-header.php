@@ -7,9 +7,9 @@
             <div class="block lg:hidden">
                 <?= svg('logo', 'h-9 w-auto') ?>
             </div>
-            <div class="hidden lg:flex">
-                <?= svg('uic', 'h-12 w-auto mr-4') ?>
-                <div>Barcelona • Espanya<br>13 de novembre DE 2025<br>Campus Barcelona - Aula Magna</div>
+            <div class="hidden lg:flex items-end space-x-4">
+                <?= svg('uic', 'h-12 w-auto') ?>
+                <div>13 de novembre de 2025<br>Campus Barcelona - Aula Magna</div>
             </div>
             <ul class="flex items-center space-x-10 font-semibold ml-auto">
                 <?php
@@ -33,7 +33,7 @@
             </div>
         </div>
     </div>
-    <div x-show="isMenuOpen" x-cloak x-transition.opacity class="lg:hidden fixed inset-0 z-20 px-1 py-2">
+    <div x-show="isMenuOpen" x-cloak @click.outside="toggleMenu" x-transition.opacity class="lg:hidden fixed inset-x-0 top-0 z-20 px-1 py-2">
         <div class="flex flex-col justify-between p-4 backdrop-blur-lg bg-black/10 rounded-2xl">
             <div class="flex justify-between items-center">
                 <?= svg('logo', 'h-9 w-auto') ?>

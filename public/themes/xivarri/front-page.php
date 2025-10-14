@@ -9,11 +9,8 @@
     component('dyptich');
     component('cta');
     component('site-footer');
+    component('buy-tickets');
     ?>
-    <div class="absolute z-[-1] bottom-0 inset-x-0">
-        <img src="<?= asset('texture-2.png') ?>" alt="" class="w-full h-auto" />
-    </div>
-    <?php component('buy-tickets'); ?>
 </div>
 
 <?php get_footer(); ?>
