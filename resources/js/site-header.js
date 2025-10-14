@@ -16,7 +16,7 @@ export default () => ({
         return;
       }
 
-      this.isVisible = currentScrollY < this.previousScrollY;
+      this.isVisible = currentScrollY < this.previousScrollY && currentScrollY > this.scrollThreshold;
       this.previousScrollY = currentScrollY;
     });
   },
