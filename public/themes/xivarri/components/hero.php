@@ -1,4 +1,4 @@
-<div class="relative min-h-screen pt-24">
+<div class="relative min-h-screen flex flex-col justify-between pt-24 pb-16">
     <div class="absolute inset-0 z-[-1] -mx-4 sm:-mx-5">
         <video autoplay muted loop class="min-w-full min-h-full w-auto h-auto object-cover" playsinline>
             <source src="<?= asset('waves-1b.webm') ?>" type="video/webm">
@@ -7,9 +7,9 @@
         <!-- <img src="<?= asset('texture.png') ?>" alt="" class="min-w-full min-h-full w-auto h-auto object-cover" /> -->
     </div>
 
-    <div class="ml-auto max-w-lg font-semibold text-xl sm:text-2xl md:text-3xl leading-tighter mt-10">Un espai de reflexió i diàleg per als qui tenen ganes de fer soroll. Aquí no vens només a escoltar, vens a dir&#8209;hi la teva.</div>
+    <div class="ml-auto pl-24 max-w-xl font-semibold text-2xl md:text-3xl leading-tighter mt-12">Un espai de reflexió i diàleg per als qui tenen ganes de fer soroll. Aquí no vens només a escoltar, vens a dir&#8209;hi la teva.</div>
 
-    <div class="flex justify-center mt-40">
+    <div class="flex justify-center mt-36">
         <div>
             <div class="font-semibold text-lg sm:text-2xl md:text-3xl xl:text-4xl uppercase lg:-mb-6 2xl:-mb-10">Despertem la ment</div>
             <div class="font-display font-black text-[84px] sm:text-[120px] md:text-[180px] lg:text-[240px] xl:text-[320px] 2xl:text-[350px] min-[1920px]:!text-[420px] uppercase whitespace-nowrap leading-[0.75] *:transition-all *:duration-500 group">
