@@ -7,7 +7,7 @@ export default () => ({
 
   init() {
     window.addEventListener('scroll', () => {
-      const currentScrollY = window.scrollY;
+      const currentScrollY = Math.max(0, window.scrollY);
 
       // Update top position state
       this.isAtTop = currentScrollY <= 0;
@@ -16,7 +16,7 @@ export default () => ({
         return;
       }
 
-      this.isVisible = currentScrollY < this.previousScrollY || currentScrollY == 0;
+      this.isVisible = currentScrollY < this.previousScrollY;
       this.previousScrollY = currentScrollY;
     });
   },
