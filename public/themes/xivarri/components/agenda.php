@@ -1,4 +1,9 @@
-<div id="agenda" class="max-w-6xl mx-auto pt-16 pb-10 mt-40">
+<div id="agenda"
+    x-data="{ visible: false }"
+    x-intersect="visible = true"
+    class="max-w-6xl mx-auto pt-16 pb-10 mt-40 transition-all duration-1500 ease-out"
+    :class="visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-16'"
+>
 <div class="relative flex flex-col gap-2.5 border border-t-transparent border-apricot rounded-b-3xl p-4 lg:p-10 !pt-0">
     <div class="absolute top-0 left-0 border-l border-t border-apricot rounded-tl-3xl size-6 -translate-y-full -ml-px"></div>
     <div class="absolute top-0 right-0 border-r border-t border-apricot rounded-tr-3xl size-6 -translate-y-full -mr-px"></div>

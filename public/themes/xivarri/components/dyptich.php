@@ -1,4 +1,9 @@
-<div class="mt-24 max-w-6xl mx-auto">
+<div
+    x-data="{ visible: false }"
+    x-intersect="visible = true"
+    class="mt-24 max-w-6xl mx-auto transition-all duration-1500 ease-out"
+    :class="visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-16'"
+>
     <div class="text-center font-semibold text-3xl lg:text-5xl text-balance uppercase">El ponent d’aquesta edició</div>
     <div class="border border-orange rounded-3xl lg:p-4 mt-6 overflow-hidden">
         <div class="bg-blue-light lg:rounded-xl p-4 lg:p-6 md:flex md:gap-6 lg:gap-10">
