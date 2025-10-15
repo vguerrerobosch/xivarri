@@ -1,16 +1,18 @@
 <div class="relative py-24 my-16">
     <div class="absolute inset-0 -mx-4 sm:-mx-5 z-[-1]">
         <div class="absolute bottom-0 w-1/2 md:w-auto md:inset-y-0 left-0">
-            <video autoplay muted loop class="h-full w-auto" playsinline>
-                <source src="<?= asset('waves-2b.webm') ?>" type="video/webm">
-                <source src="<?= asset('waves-2b.mp4') ?>" type="video/mp4">
-            </video>
+            <div
+                class="h-full w-auto"
+                x-data="lottieAnimations"
+                x-init="initLottie('<?= asset('waves-2.json') ?>')"
+            ></div>
         </div>
         <div class="absolute top-0 w-1/2 md:w-auto md:inset-y-0 right-0">
-            <video autoplay muted loop class="h-full w-auto scale-x-[-1]" playsinline>
-                <source src="<?= asset('waves-2b.webm') ?>" type="video/webm">
-                <source src="<?= asset('waves-2b.mp4') ?>" type="video/mp4">
-            </video>
+            <div
+                class="h-full w-auto scale-x-[-1]"
+                x-data="lottieAnimations"
+                x-init="initLottie('<?= asset('waves-2.json') ?>')"
+            ></div>
         </div>
     </div>
 

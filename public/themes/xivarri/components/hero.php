@@ -3,22 +3,9 @@
         <div
             id="lottie-waves"
             class="w-full h-full"
-            x-data="{
-                init() {
-                    window.lottie.loadAnimation({
-                        container: this.$el,
-                        renderer: 'svg',
-                        loop: true,
-                        autoplay: true,
-                        path: '<?= asset('waves-1.json') ?>',
-                        rendererSettings: {
-                            preserveAspectRatio: 'xMidYMid slice'
-                        }
-                    });
-                }
-            }"
+            x-data="lottieAnimations"
+            x-init="initLottie('<?= asset('waves-1.json') ?>')"
         ></div>
-        <!-- <img src="<?= asset('texture.png') ?>" alt="" class="min-w-full min-h-full w-auto h-auto object-cover" /> -->
     </div>
 
     <div class="ml-auto pl-24 max-w-xl font-semibold text-2xl md:text-3xl leading-tighter mt-12">Un espai de reflexió i diàleg per als qui tenen ganes de fer soroll. Aquí no vens només a escoltar, vens a dir&#8209;hi la teva.</div>
