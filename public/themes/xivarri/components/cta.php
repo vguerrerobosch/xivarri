@@ -1,7 +1,7 @@
 <div
     x-data="{ visible: false }"
     x-intersect="visible = true"
-    class="relative py-24 my-16 transition-all duration-1500 ease-out"
+    class="relative py-12 md:py-24 my-16 transition-all duration-1500 ease-out"
     :class="visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-16'"
 >
     <div class="absolute inset-0 -mx-4 sm:-mx-5 z-[-1]">

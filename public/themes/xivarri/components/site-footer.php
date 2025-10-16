@@ -16,7 +16,7 @@
                 <div class="size-10 rounded-full bg-black/15">
                     <?= svg('calendar', 'w-full h-full p-2.5') ?>
                 </div>
-                <div class="mt-16">
+                <div class="mt-4 lg:mt-16">
                     <div class="opacity-50">Reserva’t la data</div>
                     <div class="text-xl leading-tight">13 de novembre de 2025<br>19.30 h - 22.30 h</div>
                 </div>
@@ -26,7 +26,7 @@
                 <div class="size-10 rounded-full bg-black/15">
                     <?= svg('ticket', 'w-full h-full p-2.5') ?>
                 </div>
-                <div class="mt-16">
+                <div class="mt-4 lg:mt-16">
                     <div class="opacity-50">Compra l’entrada</div>
                     <div class="text-xl leading-tight">Disponible a la nostra plataforma</div>
                 </div>
@@ -36,7 +36,7 @@
                 <div class="size-10 rounded-full bg-black/15">
                     <?= svg('envelope', 'w-full h-full p-2.5') ?>
                 </div>
-                <div class="mt-16">
+                <div class="mt-4 lg:mt-16">
                     <div class="opacity-50">Contacta amb nosaltres</div>
                     <div class="text-xl leading-tight">
                         <a href="mailto:info@uic.es" class="underline decoration-transparent underline-offset-2 hover:decoration-white transition-colors">info@uic.es</a><br>
@@ -46,7 +46,7 @@
             </div>
             <div class="p-4 lg:p-6 rounded-xl bg-black/10 border border-transparent backdrop-blur-lg flex flex-col justify-between items-start group relative hover:bg-black/20 hover:border hover:border-orange transition-colors">
                 <?= svg('uic-barcelona', 'h-10 w-auto') ?>
-                <div class="mt-16">
+                <div class="mt-4 lg:mt-16">
                     <div class="opacity-50">Un esdeveniment de</div>
                     <div class="text-xl leading-tight">L’Institut Cultura i Pensament de UIC&nbsp;Barcelona</div>
                 </div>

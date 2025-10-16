@@ -4,10 +4,10 @@
         :class="{'-translate-y-full -mt-2': !isVisible, 'backdrop-blur-lg bg-black/10': !isAtTop}"
     >
         <div class="relative flex px-5 py-6 justify-between items-center uppercase leading-none z-10">
-            <div class="block lg:hidden">
+            <div class="block lg:hidden cursor-pointer" @click="window.scrollTo({ top: 0, behavior: 'smooth' })">
                 <?= svg('logo', 'h-9 w-auto') ?>
             </div>
-            <div class="hidden lg:flex items-end space-x-4">
+            <div class="hidden lg:flex items-center space-x-4">
                 <?= svg('uic', 'h-12 w-auto') ?>
                 <div>13 de novembre de 2025<br>Campus Barcelona - Aula Magna</div>
             </div>
@@ -33,7 +33,7 @@
             </div>
         </div>
     </div>
-    <div x-show="isMenuOpen" x-cloak @click.outside="toggleMenu" x-transition.opacity class="lg:hidden fixed inset-x-0 top-0 z-20 px-1 py-2">
+    <div x-show="isMenuOpen" x-cloak @click.outside="toggleMenu" x-transition.opacity.duration.300ms class="lg:hidden fixed inset-x-0 top-0 z-20 px-1 py-2">
         <div class="flex flex-col justify-between p-4 backdrop-blur-lg bg-black/10 rounded-2xl">
             <div class="flex justify-between items-center">
                 <?= svg('logo', 'h-9 w-auto') ?>
