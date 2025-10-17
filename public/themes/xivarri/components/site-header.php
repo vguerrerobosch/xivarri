@@ -5,9 +5,6 @@ $main_menu = $main_menu ? build_tree($main_menu) : [];
 
 $tickets_url = get_field('tickets_url', 'option');
 
-$event_details = get_field('event_details', 'option');
-$event_date = $event_details['date'] ?? '13 de novembre de 2025';
-
 ?>
 <div x-data="siteHeader">
     <div
@@ -15,12 +12,8 @@ $event_date = $event_details['date'] ?? '13 de novembre de 2025';
         :class="{'-translate-y-full -mt-2': !isVisible, 'backdrop-blur-lg bg-black/10': !isAtTop}"
     >
         <div class="relative flex px-5 py-6 justify-between items-center uppercase leading-none z-10">
-            <div class="block lg:hidden cursor-pointer" @click="window.scrollTo({ top: 0, behavior: 'smooth' })">
+            <div class="block cursor-pointer" @click="window.scrollTo({ top: 0, behavior: 'smooth' })">
                 <?= svg('logo', 'h-9 w-auto') ?>
-            </div>
-            <div class="hidden lg:flex items-center space-x-4">
-                <?= svg('uic', 'h-12 w-auto') ?>
-                <div><?= $event_date ?><br>Campus Barcelona - Aula Magna</div>
             </div>
             <ul class="flex items-center space-x-10 font-semibold ml-auto">
                 <?php

@@ -4,6 +4,10 @@ $args = wp_parse_args(array_filter($args ?? []), [
     'intro' => 'Un espai de reflexió i diàleg per als qui tenen ganes de fer soroll. Aquí no vens només a escoltar, vens a dir&#8209;hi la teva.',
     'tagline' => 'Despertem la ment',
 ]);
+
+$event_details = get_field('event_details', 'option');
+$event_date = $event_details['date'] ?? '13 de novembre de 2025';
+
 ?>
 <div class="relative min-h-svh flex flex-col justify-between pt-24 pb-16">
     <div class="absolute inset-0 z-[-1] -mx-4 sm:-mx-5">
@@ -15,9 +19,14 @@ $args = wp_parse_args(array_filter($args ?? []), [
         ></div>
     </div>
 
-    <div class="ml-auto pl-24 max-w-xl font-semibold text-2xl md:text-3xl leading-tighter mt-12"><?= $args['intro'] ?></div>
+    <div class="flex items-center space-x-4 text-sm uppercase leading-tight">
+        <?= svg('uic', 'h-12 w-auto') ?>
+        <div><?= $event_date ?><br>Campus Barcelona - Aula Magna</div>
+    </div>
 
-    <div class="flex justify-center mt-36">
+    <div class="ml-auto pl-24 max-w-xl font-semibold text-2xl md:text-3xl leading-tighter mt-16 mb-auto"><?= $args['intro'] ?></div>
+
+    <div class="flex justify-center mt-24">
         <div>
             <div class="font-semibold text-lg sm:text-2xl md:text-3xl xl:text-4xl uppercase lg:-mb-6 2xl:-mb-10"><?= $args['tagline'] ?></div>
             <div class="font-display font-black text-[84px] sm:text-[120px] md:text-[180px] lg:text-[240px] xl:text-[320px] 2xl:text-[350px] min-[1920px]:!text-[420px] uppercase whitespace-nowrap leading-[0.75] *:transition-all *:duration-500 group">
