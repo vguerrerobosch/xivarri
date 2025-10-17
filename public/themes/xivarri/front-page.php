@@ -1,15 +1,22 @@
-<?php get_header(); ?>
+<?php
 
+$components = get_field('components') ?: [
+    ['acf_fc_layout' => 'hero'],
+    ['acf_fc_layout' => 'intro'],
+    ['acf_fc_layout' => 'video'],
+    ['acf_fc_layout' => 'agenda'],
+    ['acf_fc_layout' => 'dyptich'],
+    ['acf_fc_layout' => 'cta'],
+];
+
+get_header();
+
+?>
 <div class="relative px-4 sm:px-5">
     <?php
-    component('hero');
-    component('intro');
-    component('video');
-    component('agenda');
-    component('dyptich');
-    component('cta');
-    component('site-footer');
-    component('buy-tickets');
+    foreach ($components as $component) {
+        component(str_replace('_', '-', $component['acf_fc_layout']), $component);
+    }
     ?>
 </div>
 

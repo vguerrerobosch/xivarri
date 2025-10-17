@@ -1,3 +1,14 @@
+<?php
+
+$main_menu = get_menu_items_by_location('main');
+$main_menu = $main_menu ? build_tree($main_menu) : [];
+
+$tickets_url = get_field('tickets_url', 'option');
+
+$event_details = get_field('event_details', 'option');
+$event_date = $event_details['date'] ?? '13 de novembre de 2025';
+
+?>
 <div x-data="siteHeader">
     <div
         class="fixed inset-x-0 top-0 z-10 transition"
@@ -9,23 +20,19 @@
             </div>
             <div class="hidden lg:flex items-center space-x-4">
                 <?= svg('uic', 'h-12 w-auto') ?>
-                <div>13 de novembre de 2025<br>Campus Barcelona - Aula Magna</div>
+                <div><?= $event_date ?><br>Campus Barcelona - Aula Magna</div>
             </div>
             <ul class="flex items-center space-x-10 font-semibold ml-auto">
                 <?php
-                $menu_items = [
-                    ['url' => '#que-es', 'text' => 'Què és?'],
-                    // ['url' => '#edicions-passades', 'text' => 'Edicions passades'],
-                    ['url' => '#agenda', 'text' => 'Agenda'],
-                    ['url' => '#on-som', 'text' => 'On som']
-                ];
-                foreach ($menu_items as $item): ?>
+                foreach ($main_menu as $item): ?>
                     <li class="hidden lg:block"><a
-                        href="<?= $item['url']; ?>"
+                        href="<?= $item->url ?>"
                         class="underline decoration-transparent hover:decoration-white underline-offset-4 decoration-2 transition-colors whitespace-nowrap"
-                    ><?= $item['text']; ?></a></li>
+                    ><?= $item->title ?></a></li>
                 <?php endforeach; ?>
-                <li><a href="#" class="hidden sm:block bg-white text-blue-darker rounded-full py-2 px-6 hover:bg-apricot transition-colors hover:text-white whitespace-nowrap">Compra l’entrada</a></li>
+                <?php if ($tickets_url): ?>
+                    <li><a href="<?= esc_url($tickets_url) ?>" class="hidden sm:block bg-white text-blue-darker rounded-full py-2 px-6 hover:bg-apricot transition-colors hover:text-white whitespace-nowrap">Compra l’entrada</a></li>
+                <?php endif; ?>
             </ul>
             <!-- <div class="font-semibold uppercase">Cat</div> -->
             <div class="lg:hidden ml-4">
@@ -41,18 +48,12 @@
             </div>
             <ul class="py-20 font-semibold text-[40px] leading-tighter uppercase text-center flex flex-col space-y-6">
                 <?php
-                $menu_items = [
-                    ['url' => '#que-es', 'text' => 'Què és?'],
-                    // ['url' => '#edicions-passades', 'text' => 'Edicions passades'],
-                    ['url' => '#agenda', 'text' => 'Agenda'],
-                    ['url' => '#on-som', 'text' => 'On som']
-                ];
-                foreach ($menu_items as $item): ?>
+                foreach ($main_menu as $item): ?>
                     <li class=""><a
-                        href="<?= $item['url']; ?>"
+                        href="<?= $item->url ?>"
                         class=""
                         @click="toggleMenu"
-                    ><?= $item['text']; ?></a></li>
+                    ><?= $item->title ?></a></li>
                 <?php endforeach; ?>
             </ul>
         </div>

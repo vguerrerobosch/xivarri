@@ -1,3 +1,16 @@
+<?php
+
+$args = wp_parse_args(array_filter($args ?? []), [
+    'cta' => "Vine a fer\nXivarri",
+    'title' => 'Ho sents?',
+    'description' => 'Uneix-te a l’esdeveniment universitari més vibrant del moment. Obert a tothom!',
+    'button_text' => 'Compra l’entrada',
+    'button_url' => '#',
+]);
+
+$cta = explode(PHP_EOL, $args['cta']);
+
+?>
 <div
     x-data="{ visible: false }"
     x-intersect="visible = true"
@@ -23,13 +36,13 @@
 
 <div class="max-w-4xl mx-auto">
     <div class="font-display font-black text-6xl sm:text-7xl md:text-8xl lg:text-[140px] tracking-wide leading-none uppercase flex flex-col">
-        <div class="bg-blue-darker px-4 lg:px-10 py-4 lg:py-6 rounded-2xl self-center lg:self-end">Vine a fer</div>
-        <div class="bg-blue-darker px-4 lg:px-10 py-4 lg:py-6 rounded-2xl self-center lg:self-start -mt-4 lg:-mt-10">Xivarri</div>
+        <div class="bg-blue-darker px-4 lg:px-10 py-4 lg:py-6 rounded-2xl self-center lg:self-end"><?= $cta[0] ?></div>
+        <div class="bg-blue-darker px-4 lg:px-10 py-4 lg:py-6 rounded-2xl self-center lg:self-start -mt-4 lg:-mt-10"><?= $cta[1] ?? null ?></div>
     </div>
     <div class="flex flex-col items-start max-w-md ml-auto mt-10">
-        <div class="text-apricot uppercase">Ho sents?</div>
-        <p class="text-lg leading-tight mt-4">Uneix-te a l’esdeveniment universitari més vibrant del moment. Obert a tothom!</p>
-        <a href="#" class="font-semibold bg-white px-6 py-2 rounded-full text-blue-darker mt-4 hover:bg-apricot hover:text-white transition-colors uppercase">Compra l’entrada</a>
+        <div class="text-apricot uppercase"><?= $args['title'] ?></div>
+        <p class="text-lg leading-tight mt-4"><?= $args['description'] ?></p>
+        <a href="<?= esc_url($args['button_url']) ?>" class="font-semibold bg-white px-6 py-2 rounded-full text-blue-darker mt-4 hover:bg-apricot hover:text-white transition-colors uppercase" target="_blank"><?= $args['button_text'] ?></a>
     </div>
 </div>
 
