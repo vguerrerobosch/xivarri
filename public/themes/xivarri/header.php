@@ -6,6 +6,7 @@
   <link rel="icon" type="image/png" sizes="16x16" href="<?= asset('favicon-16.png') ?>">
   <link rel="icon" type="image/png" sizes="32x32" href="<?= asset('favicon-32.png') ?>">
   <?php wp_head(); ?>
+  <?php component('metadata') ?>
   <style>
     [x-cloak] { display: none !important; }
   </style>

@@ -1,6 +1,7 @@
 languages
 mu-plugins/*
 !mu-plugins/mu-plugins.php
+!mu-plugins/extended-acf-loader
 plugins/*
 !plugins/index.php
 themes/*/build

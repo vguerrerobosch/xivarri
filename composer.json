@@ -21,7 +21,6 @@
         "roots/bedrock-autoloader": "^1.0.4",
         "roots/wordpress": "^6.8",
         "symfony/http-foundation": "^7.2",
-        "vinkla/extended-acf": "^14.0",
         "vlucas/phpdotenv": "^5.6",
         "wpengine/advanced-custom-fields-pro": "^6.4",
         "wpml/wpml-multilingual-cms": "^4.6"

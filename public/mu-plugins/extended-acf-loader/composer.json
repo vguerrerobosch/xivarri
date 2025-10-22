@@ -1,0 +1,13 @@
+{
+    "name": "wearefar/extended-acf-loader",
+    "authors": [
+        {
+            "name": "Victor Guerrero",
+            "email": "victorg@hey.com"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "vinkla/extended-acf": "^14.6"
+    }
+}
