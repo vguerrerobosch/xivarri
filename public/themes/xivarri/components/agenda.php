@@ -43,7 +43,8 @@ $args = wp_parse_args(array_filter($args ?? []), [
 ]);
 
 ?>
-<div id="agenda"
+<div id="agenda">
+<div
     x-data="{ visible: false }"
     x-intersect="visible = true"
     class="max-w-6xl mx-auto pt-16 pb-10 mt-40 transition-all duration-1500 ease-out"
@@ -70,5 +71,6 @@ $args = wp_parse_args(array_filter($args ?? []), [
     }
 
     ?>
+</div>
 </div>
 </div>

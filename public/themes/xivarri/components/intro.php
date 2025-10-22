@@ -7,7 +7,8 @@ $args = wp_parse_args(array_filter($args ?? []), [
 ]);
 
 ?>
-<div id="intro"
+<div id="intro">
+<div
     x-data="{ visible: false }"
     x-intersect="visible = true"
     class="lg:flex lg:space-x-16 max-w-6xl mx-auto mt-24 py-10 transition-all duration-1500 ease-out"
@@ -18,4 +19,5 @@ $args = wp_parse_args(array_filter($args ?? []), [
         <div class="font-semibold text-2xl lg:text-3xl/tighter"><?= $args['intro'] ?></div>
         <div class="max-w-lg text-lg/tighter mt-10"><?= $args['description'] ?></div>
     </div>
+</div>
 </div>

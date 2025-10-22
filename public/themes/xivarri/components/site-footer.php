@@ -32,7 +32,7 @@ $event = wp_parse_args(array_filter($event ?? []), [
 ]);
 
 ?>
-<div id="contact" class="relative pb-16 sm:pb-5 mt-24">
+<div id="contact" class="relative pt-4 pb-16 sm:pb-5 mt-20">
     <div class="absolute z-[-1] inset-x-0 bottom-0 top-[50%] -mx-4 sm:-mx-5">
         <img src="<?= asset('texture-2.png') ?>" alt="" class="w-full h-full object-cover" />
     </div>
