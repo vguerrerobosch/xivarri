@@ -11,7 +11,7 @@ $args = wp_parse_args(array_filter($args ?? []), [
 <div
     x-data="{ visible: false }"
     x-intersect="visible = true"
-    class="lg:flex lg:space-x-16 max-w-6xl mx-auto mt-24 py-10 transition-all duration-1500 ease-out"
+    class="lg:flex lg:space-x-16 max-w-6xl mx-auto mt-10 pt-24 pb-10 transition-all duration-1500 ease-out"
     :class="visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-16'"
 >
     <div class="text-sm text-orange uppercase mb-4"><?= nl2br($args['quote']) ?></div>
