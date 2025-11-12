@@ -31,6 +31,8 @@ $event = wp_parse_args(array_filter($event ?? []), [
     'time' => '19.30 h - 22.30 h',
 ]);
 
+$sponsors = get_field('sponsors', 'option') ?: [];
+
 ?>
 <div id="contact" class="relative pt-24 pb-16 sm:pb-5 mt-10">
     <div class="absolute z-[-1] inset-x-0 bottom-0 top-[50%] -mx-4 sm:-mx-5">
@@ -89,7 +91,24 @@ $event = wp_parse_args(array_filter($event ?? []), [
                 </div>
             </div>
         </div>
-        <!-- <div class="p-4 lg:p-6 rounded-xl bg-black/10 border border-transparent backdrop-blur-lg">Amb el patrocini de</div> -->
+        <?php if ($sponsors): ?>
+        <div class="p-4 lg:p-6 rounded-xl bg-black/10 border border-transparent backdrop-blur-lg">
+            <div>Amb el patrocini de</div>
+            <div class="mt-4 flex items-center gap-6 md:gap-10">
+                <?php foreach ($sponsors as $sponsor): ?>
+                    <div>
+                        <?php if ($sponsor['description']): ?>
+                            <a href="<?= esc_url($sponsor['description']) ?>" target="_blank" rel="noopener noreferrer" title="<?= esc_attr($sponsor['title'] ?? '') ?>">
+                        <?php endif ?>
+                        <?= image($sponsor['url'], 'h-10 w-18 object-contain invert') ?>
+                        <?php if ($sponsor['description']): ?>
+                            </a>
+                        <?php endif ?>
+                    </div>
+                <?php endforeach ?>
+            </div>
+        </div>
+        <?php endif ?>
         <div class="px-4 lg:px-6 py-4 rounded-xl bg-black/10 border border-transparent backdrop-blur-lg lg:flex justify-between items-center">
             <ul class="lg:flex space-x-6 [&>li]:lg:border-r [&>li]:lg:border-white/50 [&>li]:lg:last:border-0 [&>li]:lg:pr-6">
                 <?php

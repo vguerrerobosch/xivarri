@@ -4,6 +4,7 @@ namespace Xivarri\ACF;
 
 use Extended\ACF\Fields\Email;
 use Extended\ACF\Fields\File;
+use Extended\ACF\Fields\Gallery;
 use Extended\ACF\Fields\Group;
 use Extended\ACF\Fields\Image;
 use Extended\ACF\Fields\Text;
@@ -62,6 +63,8 @@ class ThemeOptions extends FieldGroup
                         ->format('id')
                         ->previewSize('thumbnail'),
                 ]),
+            Gallery::make('Sponsors', 'sponsors')
+                ->previewSize('thumbnail'),
             File::make('iCal File', 'ics_file')
                 ->acceptedFileTypes(['ics'])
                 ->format('url'),
