@@ -27,3 +27,17 @@
 .video-circular.expanded {
     clip-path: circle(100% at center);
 }
+
+/* Sponsor Scrolling Animation */
+@keyframes scroll-x {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.animate-scroll-x {
+    animation: scroll-x linear infinite;
+}
