@@ -4,6 +4,7 @@ namespace Xivarri\ACF;
 
 use Xivarri\ACF\FieldGroup;
 use Extended\ACF\Fields\FlexibleContent;
+use Extended\ACF\Fields\Gallery;
 use Extended\ACF\Fields\Image;
 use Extended\ACF\Fields\Layout;
 use Extended\ACF\Fields\Repeater;
@@ -32,6 +33,7 @@ class PageFlexibleContent extends FieldGroup
             $this->layoutAgenda(),
             $this->layoutDyptich(),
             $this->layoutCta(),
+            $this->layoutGallery(),
         ];
     }
 
@@ -162,6 +164,22 @@ class PageFlexibleContent extends FieldGroup
                     ->required(),
                 Text::make(__('Button Text', 'xivarri'), 'button_text')->required(),
                 URL::make(__('Button URL', 'xivarri'), 'button_url')->required(),
+            ],
+        ];
+    }
+
+    protected function layoutGallery()
+    {
+        return [
+            'name' => 'gallery',
+            'label' => 'Gallery',
+            'fields' => [
+                Text::make(__('Title', 'xivarri'), 'title')->required(),
+                Gallery::make(__('Images', 'xivarri'), 'images')
+                    ->previewSize('thumbnail')
+                    ->minFiles(8)
+                    ->format('id')
+                    ->required(),
             ],
         ];
     }

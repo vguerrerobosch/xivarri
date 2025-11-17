@@ -2,6 +2,8 @@
 
 @import "./fonts.css";
 
+@import "swiper/css";
+
 @theme {
     --font-sans: 'LFT Etica', ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-display: 'Owners Narrow', ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
